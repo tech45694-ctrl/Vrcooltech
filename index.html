@@ -7,10 +7,9 @@
 
 <title>VR COOL TECH | Washing Machine & Fridge Service Thanjavur</title>
 
-<meta name="description" content="VR COOL TECH offers washing machine service, fridge repair and RO water purifier service in Thanjavur. Call 9843959580 for home appliance repair.">
+<meta name="description" content="VR COOL TECH offers washing machine service, fridge repair and RO water purifier service in Thanjavur. Call 9843959580 for home service.">
 
-<meta name="keywords" content="Washing Machine Service Thanjavur, Fridge Service Thanjavur, RO Service Thanjavur, Refrigerator Repair">
-
+<meta name="keywords" content="Washing Machine Service Thanjavur, Fridge Service Thanjavur, RO Service Thanjavur">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#062b45">
 
@@ -30,6 +29,7 @@ body {
  background:#f4f8fb;
  color:#183044;
  line-height:1.6;
+ padding-bottom:90px;
 }
 
 header {
@@ -96,36 +96,6 @@ nav a {
 
 .whatsapp {
  background:#16a34a;
-}
-
-.call-banner {
- display:flex;
- flex-direction:column;
- align-items:center;
- justify-content:center;
- width:95%;
- max-width:1100px;
- margin:30px auto;
- padding:25px 10px;
- text-align:center;
- color:white;
- font-size:clamp(17px,4vw,36px);
- font-weight:bold;
- text-decoration:none;
- background:linear-gradient(100deg,#06b6d4,#f97316);
- border-radius:25px;
- box-shadow:0 8px 20px #0002;
- line-height:1.5;
- gap:5px;
- overflow-wrap:anywhere;
-}
-
-.call-banner span {
- display:block;
-}
-
-.call-banner:hover {
- transform:scale(1.01);
 }
 
 section {
@@ -226,10 +196,6 @@ section h2 {
  margin:15px;
 }
 
-.contact .btn {
- margin:10px 5px;
-}
-
 footer {
  background:#031b2d;
  color:white;
@@ -238,8 +204,41 @@ footer {
  font-size:14px;
 }
 
-@media(max-width:600px) {
+/* FIXED CENTER CALL BUTTON */
 
+.call-banner {
+ position:fixed;
+ bottom:12px;
+ left:50%;
+ transform:translateX(-50%);
+ width:94%;
+ max-width:650px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ padding:12px 8px;
+ text-align:center;
+ color:white;
+ font-size:19px;
+ font-weight:bold;
+ line-height:1.4;
+ text-decoration:none;
+ background:linear-gradient(100deg,#06b6d4,#f97316);
+ border-radius:20px;
+ box-shadow:0 5px 20px #0004;
+ z-index:999;
+}
+
+.call-banner span {
+ display:block;
+}
+
+.call-banner:active {
+ opacity:0.85;
+}
+
+@media(max-width:600px) {
  header h1 {
   font-size:27px;
  }
@@ -254,16 +253,9 @@ footer {
  }
 
  .call-banner {
-  width:94%;
-  padding:23px 8px;
-  border-radius:20px;
-  font-size:19px;
+  font-size:18px;
+  padding:12px 8px;
  }
-
- section h2 {
-  font-size:25px;
- }
-
 }
 </style>
 </head>
@@ -297,13 +289,6 @@ footer {
 
 </div>
 
-<!-- CALL AND WHATSAPP NUMBER BANNER -->
-
-<a class="call-banner" href="tel:+919843959580">
-<span>📞 Call / WhatsApp</span>
-<span>+91 98439 59580</span>
-</a>
-
 <!-- SERVICES -->
 
 <section id="services">
@@ -313,39 +298,24 @@ footer {
 <div class="services">
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80" alt="Washing Machine Service">
-
 <h3>Washing Machine Service</h3>
-
 <p>All types of washing machine repair and maintenance service.</p>
-
 <a class="service-btn" href="tel:+919843959580">Book Service</a>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80" alt="Fridge Service">
-
 <h3>Fridge Service</h3>
-
 <p>Professional refrigerator repair and maintenance service.</p>
-
 <a class="service-btn" href="tel:+919843959580">Book Service</a>
-
 </div>
 
 <div class="card">
-
 <img src="https://images.unsplash.com/photo-1585687433148-4aefb8a3b0a1?auto=format&fit=crop&w=800&q=80" alt="RO Water Purifier Service">
-
 <h3>RO Water Purifier Service</h3>
-
 <p>RO repair, filter replacement and maintenance service.</p>
-
 <a class="service-btn" href="tel:+919843959580">Book Service</a>
-
 </div>
 
 </div>
@@ -383,7 +353,6 @@ Contact us for your home appliance repair needs.
 </div>
 
 </div>
-
 </section>
 
 <!-- CONTACT -->
@@ -397,7 +366,7 @@ Contact us for your home appliance repair needs.
 <h3>+91 98439 59580</h3>
 
 <a class="btn" href="tel:+919843959580">
-📞 Call Now
+Call Now
 </a>
 
 <a class="btn whatsapp" href="https://wa.me/919843959580">
@@ -407,12 +376,16 @@ WhatsApp Now
 </section>
 
 <footer>
-
 <p>© 2026 VR COOL TECH. All Rights Reserved.</p>
-
 <p>Washing Machine | Fridge | RO Service – Thanjavur</p>
-
 </footer>
+
+<!-- ALWAYS VISIBLE CALL BUTTON -->
+
+<a class="call-banner" href="tel:+919843959580">
+<span>📞 CALL NOW</span>
+<span>+91 98439 59580</span>
+</a>
 
 </body>
 </html>
